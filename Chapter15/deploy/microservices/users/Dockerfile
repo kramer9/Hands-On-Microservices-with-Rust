@@ -3,6 +3,8 @@ FROM rust:nightly
 RUN USER=root cargo new --bin users-microservice
 WORKDIR /users-microservice
 COPY ./Cargo.toml ./Cargo.toml
+RUN rustup update
+RUN cargo clean
 RUN cargo build
 
 RUN rm src/*.rs

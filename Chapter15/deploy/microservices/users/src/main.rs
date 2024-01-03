@@ -9,7 +9,6 @@ extern crate postgres;
 #[macro_use]
 extern crate rouille;
 extern crate serde_derive;
-
 use crypto::pbkdf2::{pbkdf2_check, pbkdf2_simple};
 use diesel::prelude::*;
 use diesel::dsl::{exists, select};
